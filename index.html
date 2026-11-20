@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/picture 1.png" type="image/png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="small-pic" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class= "fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <pre>SOFTWARE DEVELOPER <br>AND PHYSIOTHERAPIST</pre>
+          <h1>
+            Hi,I'm <span>Josephat</span><br />
+            Ezeoba From Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about--------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/picture 3.png" alt="human" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a Software Developer and physiotherapist with background in computer science.
+              I combine clinical experience in physiotherapy with technical expertise in Software
+              Developement to build practical, user-centered solutions, with a particular focus on
+              health, rehabilitation, and patient care. My approach is grounded in problem-solving,
+              precision, and a commitment to improving how people move, recover, and access care.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Software</span><br />Responsive Web Design</li>
+                <li>
+                  <span>Technical Skills</span><br />HTML/CSS/JAVAScript(Basic)
+                  <br />VS code, Git & GitHub
+                </li>
+                <li>
+                  <span>Soft Skills</span><br />Problem solving & Attention to
+                  Details <br />Patient Care & Communication <br />Teamwork
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Personal Projects</span><br />Built responsive portfolio
+                  website <br />using HTML, CSS & JAVAScript in VS Code
+                </li>
+                <li>
+                  <span>Web Developement</span><br />Building user-friendly
+                  websites for clinics and businesses
+                </li>
+                <li>
+                  <span>Physiotherapist</span><br />Provide physiotherapy
+                  treatment and rehabilitation <br />exercises for patients with
+                  pain, injury, and post-surgery recovery.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>Student</span><br />Schoolville Tech hub</li>
+                <li>
+                  <span>Associate Degree</span><br />University of the people
+                  (In progress)
+                </li>
+                <li><span>Degree</span><br />University of Nigeria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .............services.............. -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Projects</h2>
+            <p>l Build responsive portfolio website
+              <br>using HTML, CSS & JAVAScript in VS Code
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>Web Design</h2>
+            <p>l Build user-friendly websites for clinics and businesses</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>physiotherapy</h2>
+            <p>l Provide physiotherapy treatment and rehabilitation 
+              <br />exercises for patients with
+                  pain, injury, and post-surgery recovery.</p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .....................portfolio................ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/images.jpg" alt="" />
+            <div class="layer">
+              <h3>Personal Projects</h3>
+              <p>Building responsive portfolio that connects you to the talented people around</p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/pic 1.jpg"" />
+            <div class="layer">
+              <h3>Web Developement</h3>
+              <p>The websites for clinics and businesses connects you to the talented people around</p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/physio.jpg" alt="" />
+            <div class="layer">
+              <h3>physiotherapy</h3>
+              <p>Provides physiotherapy treatment and rehabilitation for clients</p>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <!-- ................contact................. -->
+    <div id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane">contact@ezeobajosephat@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>07069068144</p>
+            
+          </div>
+          <div class="contact-left">
+            <a href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+           <a href="images/EZEOBA CV.pdf"Download class="btn btn2">Download Cv</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="your Email"
+              required
+            />
+            <textarea
+              name="massage"
+              rows="6"
+              placeholder="your massage"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu")
+      function openmenu(){
+        sidemenu.style.right = "0"
+      }
+      function openmenu(){
+        sidemenu.style.right = "-200px"
+      }
+    </script>
+    
+    <!-- ---------footer-------- -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>@2026 Ezeoba Josephat. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
